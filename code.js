@@ -1,8 +1,8 @@
 function fib(n) {
     let sequence = [];
     for (let i = 0; i <= n; i++) {
-        sequence.push(calculateFib(i));
-    return sequence; }
+        sequence.push(calculateFib(i)); }
+    return sequence;
 
     function calculateFib(index) {
         if (index <= 1) {
