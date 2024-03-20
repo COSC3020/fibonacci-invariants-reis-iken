@@ -4,7 +4,7 @@ function fib(n) {
         sequence.push(calculateFib(i)); }
     return sequence;
 
-    function calculateFib(index) {
+    function calculateFib(index, sequence) {
         if (index <= 1) {
             return index; }
         if (!sequence[index]) {
