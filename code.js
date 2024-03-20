@@ -1,12 +1,17 @@
 function fib(n) {
-    let sequence = [];
-    for (let i = 0; i < n; i++) {
-        sequence.push(calculateFib(i, sequence)); }
-    return sequence;
-
-function calculateFib(index, sequence) {
-    if (index <= 1) {
-        return index; }
-    if (!sequence[index]) {
-        return calculateFib(index-1, sequence) + calculateFib(index-2, sequence); }
+    var fib_solns = [];
+    
+    function fibonacciCalculate(n) {
+        if (n === 0) return 0;
+        if (n === 1) return 1;
+        if (fib_solns[n] !== undefined) {
+            return fib_solns[n];
         }
+        fib_solns[n] = fibonacci(n - 1) + fibonacci(n - 2);
+        return fib_solns[n];
+    }
+    for (var i = 0; i <= n; i++) {
+        fibonacci(i);
+    }
+    return fib_solns;
+}
