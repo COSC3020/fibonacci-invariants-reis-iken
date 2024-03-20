@@ -1,6 +1,6 @@
 function fib(n) {
     let sequence = [];
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
         sequence.push(calculateFib(i, sequence)); }
     return sequence;
 
