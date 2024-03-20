@@ -8,5 +8,5 @@ function fib(n) {
         if (index <= 1) {
             return index; }
         if (!sequence[index]) {
-            sequence[index] = calculateFib(n-1) + calculateFib(n-2); }
+            sequence[index] = calculateFib(index-1) + calculateFib(index-2); }
             return sequence[index]; }
