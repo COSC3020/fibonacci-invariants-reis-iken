@@ -29,4 +29,4 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-**A good invariant for fib() would be ensuring that the fib_solns array contains correct Fibonacci numbers up to the index i. This way, we would be able to ensure before each recursive call that all of the previously calculated Fibonacci numbers in the array are correct.**
+**A good invariant for fib() would be ensuring that the last fibonacci number calculated equals the sum of the previous 2 finbonacci numbers.**
