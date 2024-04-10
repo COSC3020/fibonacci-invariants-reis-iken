@@ -29,4 +29,4 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-**A good invariant for fib() would be ensuring that the last fibonacci number calculated equals the sum of the previous 2 finbonacci numbers.**
+**A good invariant for fib() would be ensuring that the last fibonacci number calculated equals the sum of the previous 2 finbonacci numbers. This helps prove the function to be correct because if, before OR after each iteration, the calculated Fibonacci number at i was not equal to the sum of the Fibonacci number at i - 1 and i - 2, then we are doing something wrong in our code. If the calculation was off for any number along the way, then our invariant would catch it, and we would know the function is wrong. But if we go through the entire number of calculations and the last calculated number is always equal to the 2 calculated numbers before that, all the way back to indexes 0 and 1 (which have values 0 and 1 respectively), then we have proven that our function is correct.**
